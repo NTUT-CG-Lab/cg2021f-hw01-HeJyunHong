@@ -11,6 +11,7 @@
 			HeJyunHong 108599006 HW01
 			<br/>Drag to spin
 		</div>
+		<div style="position: absolute; top: 0; left: 0;", id="ScoreBoard"></div>
 
 		<script src="./opentype.min.js"></script>
 		<script src="./three.min.js"></script>
@@ -52,7 +53,7 @@
 					//5. 自評表 checkbox 文字大小 (預設多少忘了)
 					'15px', 
 					//6. 自評表標題 (預設 "自我評分表")
-					dialogTitle='自我評分表 (助教測試用)'
+					dialogTitle='自我評分表 (108599006)'
 				);
 				
 				//設定下載按鈕 <-- 一定要呼叫這個函數，不然沒有下載功能
@@ -61,7 +62,7 @@
 				//產生 "開啟自評表按鈕"
 				so.renderBtn(
 					//自評表按鈕插入位置
-					document.body,
+					document.getElementById("ScoreBoard"),
 					//自評表按鈕文字
 					"開啟自評表"
 				);
